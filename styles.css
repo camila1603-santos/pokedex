@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(150, 15, 15);
+  width: 100%;
+}
+
+.pokedex {
+  width: 600px;
+  height: 800px;
+  background: rgb(8, 17, 34);
+  border-radius: 10px;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokedex-title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.screen {
+  width: 500px;
+  height: 150px;
+  background: #000000;
+  position: absolute;
+  top: 400px;
+  left: 30px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 5px rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+
+h1,
+h3,
+h4 {
+  margin: 10px 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(150, 15, 15);
+}
+
+.pokemon-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+button {
+  display: flex;
+  background-color: rgb(8, 17, 34);
+  padding: 4px 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: wavy;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: rgb(175, 175, 174);
+}
+
+.buttons {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  background: rgb(20, 31, 97);
+  border-radius: 50%;
+}
+
+.circle-button {
+  width: 60px;
+  height: 60px;
+  background: rgb(10, 240, 60);
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  position: absolute; /* Mantém a posição dentro da Pokédex */
+  bottom: 450px; /* Ajusta a posição para ficar mais alinhado */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%; /* Define a largura da .container */
+  text-align: center;
+  background-color: black; /* Fundo preto */
+  box-shadow: inset 0 0 0 1000px black; /* Garante que TODO o fundo fique preto */
+  z-index: 1; /* Coloca a .container acima da Pokédex */
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: white;
+}
+
+.button-tittle {
+  position: absolute;
+  bottom: 500px; ;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* Estiliza a tabela */
+table {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%; 
+  border-spacing: 1cap;
+}
+
+td {
+  width: 25%;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+
+td:hover {
+  background-color: darkblue;
+}

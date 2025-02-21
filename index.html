@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!-- Better to use "pt-BR" if the site is in Portuguese -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Imagens/favicon-16x16.png" />
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="circle-button"></div>
+        <h1 class="pokedex-title">Pokédex</h1>
+
+      <!-- Seção de pesquisa e informações -->
+      <div class="container">
+        <p>
+          Seja bem-vindo à Pokédex! Aqui você encontra informações sobre todos
+          os Pokémons.
+        </p>
+        <p>
+          Clique em um dos pokémons mais buscados acima ou
+          pesquise um pokémon específico na barra de pesquisa.
+        </p>
+        <form action="./search.php" method="GET">
+          <input
+            type="text"
+            name="search"
+            placeholder="Digite o nome do pokémon"
+            required
+          />
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+
+      <!-- Mais buscados -->
+      <div class="screen">
+          <h4>Mais buscados</h4>
+          <div class="pokemon-buttons">
+            <button type="button" onclick="location.href='./charizard.html'">Charizard</button>
+            <button type="button" onclick="location.href='./bulbasaur.html'">Bulbasaur</button>
+            <button type="button" onclick="location.href='./pikachu.html'">Pikachu</button>
+            <button type="button" onclick="location.href='./jigglypuff.html'">Jigglypuff</button>
+            <button type="button" onclick="location.href='./vaporeon.html'">Vaporeon</button>
+          </div>
+        </div>
+    </div>
+               <table>
+                <tr>
+                    <td>on/off</td>
+                    <td>config</button></td>
+                    <td>reset</td>
+                    <td>sound</td>
+                    <tr>
+                    <td>previous</td>
+                    <td>down</td>
+                    <td>up</td>
+                    <td>next</td>    
+                    </tr>
+                </tr>
+            </table>
+    </div>
+  </body>
+</html>
